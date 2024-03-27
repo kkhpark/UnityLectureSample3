@@ -31,14 +31,14 @@ public class OculusActionInput : MonoBehaviour
 
     private void OnTriggerAction(InputAction.CallbackContext callbackContext)
     {
-        Debug.Log("PrimaryButton");
+        Debug.Log("TriggerButton : " + callbackContext.ReadValue<float>());
         FireBullet();
     }
 
     private void OnDisable()
     {
         InputActions.Disable();
-        TriggerActionReference.action.performed += OnTriggerAction;
+        TriggerActionReference.action.performed -= OnTriggerAction;
     }
 
 
