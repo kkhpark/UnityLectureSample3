@@ -1116,7 +1116,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputActions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  ActivateReference: {fileID: -6482097627416972755, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  PrimaryActionReference: {fileID: -6482097627416972755, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  SecondaryActionReference: {fileID: 0}
+  TriggerActionReference: {fileID: -2612138436946832397, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  Bullet: {fileID: 2991437806571915891, guid: 5af7c6fe3fc3d9c4c88e4703a2d2f9e8, type: 3}
+  bulletSpeed: 1000
 --- !u!1 &687727033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,7 +2414,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputActions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  ActivateReference: {fileID: 457590141914230990, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  PrimaryActionReference: {fileID: 457590141914230990, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  SecondaryActionReference: {fileID: 0}
+  TriggerActionReference: {fileID: 0}
+  Bullet: {fileID: 2991437806571915891, guid: 5af7c6fe3fc3d9c4c88e4703a2d2f9e8, type: 3}
+  bulletSpeed: 10
 --- !u!1 &1205402148
 GameObject:
   m_ObjectHideFlags: 0
