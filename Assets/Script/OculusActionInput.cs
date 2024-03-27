@@ -8,6 +8,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class OculusActionInput : MonoBehaviour
 {
+    float _triggerValue;
+
+
     //Action Asset
     public InputActionAsset InputActions;
     //Action Reference
@@ -31,8 +34,21 @@ public class OculusActionInput : MonoBehaviour
 
     private void OnTriggerAction(InputAction.CallbackContext callbackContext)
     {
+        //이게 1이 되는 순간 값을 안줘;  각각의 이벤트 마다 뭔가 추가해서 넣어줘야 한다고 함.
+
         Debug.Log("TriggerButton : " + callbackContext.ReadValue<float>());
+
+        _triggerValue = callbackContext.ReadValue<float>();
+
         FireBullet();
+    }
+
+    private void Update()
+    {
+       /* if (_triggerValue == 1)
+        {
+            FireBullet();
+        }*/
     }
 
     private void OnDisable()
