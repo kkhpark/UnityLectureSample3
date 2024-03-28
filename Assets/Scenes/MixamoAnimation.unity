@@ -426,6 +426,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  CharacterController: {fileID: 0}
+  moveSpeed: 8
+  maxTurnSpeed: 150
+  horizontal: 0
+  vertical: 0
 --- !u!143 &1378576010
 CharacterController:
   m_ObjectHideFlags: 0
@@ -451,7 +456,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1517329499
 GameObject:
   m_ObjectHideFlags: 0
