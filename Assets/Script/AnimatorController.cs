@@ -43,12 +43,16 @@ public class AnimatorController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal"); //A와 D
         //위 아래
         vertical = Input.GetAxis("Vertical");//W S
-        //어떻게 자동으로 맵핑이 되는거지..?
+                                             //어떻게 자동으로 맵핑이 되는거지..?
+
+        anim.SetFloat("posx", horizontal);
+        anim.SetFloat("posy", vertical);
 
         Vector3 direction = new Vector3(horizontal, 0, vertical);
         direction *= moveSpeed;
         CharacterController.SimpleMove(direction);
 
+/*
         if (Input.GetKey(KeyCode.W))  //getKey는 누르는 동안은 계속 호출.
         {
             anim.SetFloat("posy", 1f);
@@ -74,6 +78,6 @@ public class AnimatorController : MonoBehaviour
         else
         {
             anim.SetFloat("posx", 0f);
-        }
+        }*/
     }
 }

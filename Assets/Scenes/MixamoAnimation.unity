@@ -427,7 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   CharacterController: {fileID: 0}
-  moveSpeed: 8
+  moveSpeed: 2
   maxTurnSpeed: 150
   horizontal: 0
   vertical: 0
