@@ -15,7 +15,7 @@ public class AnimatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
                 //getKeyDown은 딱 처음에 눌렸을때 한번.
                 if (Input.GetKey(KeyCode.W))  //getKey는 누르는 동안은 계속 호출.
                 {
@@ -32,9 +32,7 @@ public class AnimatorController : MonoBehaviour
                 {
                     anim.SetBool("isWalk", false);
                     anim.SetBool("isWalkBack", false);
-                }
-
-        /*
+                }*/
         if (Input.GetKey(KeyCode.W))  //getKey는 누르는 동안은 계속 호출.
         {
             anim.SetFloat("posy", 1f);
@@ -43,7 +41,13 @@ public class AnimatorController : MonoBehaviour
         {
             anim.SetFloat("posy", -1f);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else
+        {
+            anim.SetFloat("posy", 0f);
+        }
+
+
+        if (Input.GetKey(KeyCode.D))
         {
             anim.SetFloat("posx", 1f);
         }
@@ -54,7 +58,6 @@ public class AnimatorController : MonoBehaviour
         else
         {
             anim.SetFloat("posx", 0f);
-            anim.SetFloat("posy", 0f);
-        }*/
+        }
     }
 }
